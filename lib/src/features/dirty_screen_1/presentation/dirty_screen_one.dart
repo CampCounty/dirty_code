@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_1/red_box.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenOne extends StatelessWidget {
@@ -12,82 +13,11 @@ class DirtyScreenOne extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         child: Column(
           children: [
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.redAccent),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.bug_report),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    'Box #1',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.redAccent),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.bug_report),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    'Box #2',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.redAccent),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.bug_report),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    'Box #3',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.redAccent),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.bug_report),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    'Box #4',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  )
-                ],
-              ),
-            )
+            RedBox(text: "Box #1"),
+            RedBox(text: "Box #2"),
+            RedBox(text: "Box #3"),
+            RedBox(text: "Box #4"),
+            RedBox(text: "Box #5"),
           ],
         ),
       ),
